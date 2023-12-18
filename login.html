@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SWIFT-BITE login</title>
+    <style>
+        body {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            /* margin: 0; */
+            padding: 0;
+            background-color: rgb(15, 4, 26);
+        }
+        
+        form {
+            background-color:bisque;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        input[type="submit"] {
+            width: 80%;
+            margin-left: 31px;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #032f06;
+            box-shadow: #032f06;
+            transform: scale(1.1); 
+
+           transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>LOG IN</legend><br><br>
+            <label for="email">Email</label>
+            <input type="email" required id="email"><br><br>
+            <label for="password">Password</label>
+            <input type="password" required id="password"><br><br>
+        </fieldset><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

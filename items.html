@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find your favorite</title>
+    <style>
+        *{
+            background-color: darkslategrey;
+        }
+
+        h1{
+            text-align: center;
+            font-family: cursive;
+            font-size: xx-large;
+            background-color:teal;
+            color: yellow;
+            opacity: 0.9;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 30%;
+            margin-right: 30%;
+            padding: 20px;
+            
+        }
+
+
+
+       nav{
+        /* background-color: lime; */
+        display: grid;
+         margin-left: 22%;
+        margin-right: 28%;
+       }
+        nav ul{
+            align-items: center;
+            text-align: center;
+            list-style-type: none;
+            list-style-position: inside;
+            
+            
+        }
+
+        nav ul a{
+
+      background-color: rgb(12, 137, 255); 
+    color: white;
+    border: none;
+    height: 70px;
+    width: 100px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: box-shadow 0.15s;
+    padding: 20px;
+    text-decoration: none;
+}
+
+       
+       nav ul a:hover{
+        background-color: orange;
+        color: white;
+        box-shadow: 10px 10px 10px rgba(56, 38, 38, 0.15);
+        font-size: 23px;
+        transition-duration: 5s;
+        transform: scale(1.1); 
+        transition: transform 0.3s ease;
+       }
+       
+       nav ul li{
+        display: inline;
+       }
+        .item{
+            
+        align-items: center;
+        cursor: pointer;
+        border-radius: 8px;
+        border: 2px solid black;
+        margin: 50px;
+        margin-left: 70px;
+        margin-bottom: 3px;
+        background-color: whitesmoke;
+        
+        }
+        .item h4{
+            background-color: whitesmoke;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        img{
+            display: block;
+            width:150px;
+            height: 130px;
+            
+            margin: auto;
+            margin-top: 10px;
+
+            margin-bottom: 3px;
+           border: 2px solid black;
+             border-radius: 8px;
+             background-color: whitesmoke;
+        }
+
+        img:hover{
+            cursor: pointer;
+        }
+
+        .items{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 30px,20px;
+        grid-column-gap: 30px;
+        grid-row-gap: 40px;
+        text-align: center;
+        }
+       h3{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgb(64, 87, 87);
+        color: chartreuse;
+        text-align: center;
+        border: solid 2px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 35%;
+        margin-right: 35%;
+        padding: 20px;
+        
+       }
+
+       .items button{
+            background-color: darkseagreen;
+            padding: 5px;
+            margin-bottom: 20px;
+
+        
+       }
+       .item img{
+        cursor: pointer;
+        border-radius: 8px;
+       }
+       .items button:hover{
+        box-shadow: 10px 10px 10px rgba(56, 38, 38, 0.15);
+        background-color: aquamarine;
+        font-size: 23px;
+        transform: scale(1.1); 
+        transition: transform 0.3s ease;
+        /* width: 300px; */
+       }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Find Your Favorite</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Near</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <h3>SNACKS ITEMS</h3>
+    <section class="items">
+        <!-- Your item divs here -->
+        <div class="item">
+            <img src="vadapav.jpg" alt="item not available" >
+            <h4>vadapav</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="panipuri.jpg" alt="item not available" >
+            <h4>panipuri</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="maggi.jpg" alt="item not available" >
+            <h4>maggi</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="noodles.jpg" alt="item not available" >
+            <h4>noodles</h4>
+            <button>Order</button>
+        </div class="item">
+
+        <div class="item">
+            <img src="misal.jpg" alt="item not available" >
+            <h4>misal</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="Masala dosa.jpg" alt="item not available" >
+            <h4>masala dosa</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="french fries.jpg" alt="item not available" >
+            <h4>french fries</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="Som tam.webp" alt="item not available" >
+            <h4>som tam </h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="Stinky tofu.webp" alt="item not available" >
+            <h4>stinky tofu </h4>
+            <button>Order</button>
+        </div>
+    </section>
+
+    <H3>FOOD ITEMS</H3>
+
+    <section class="items">
+        <div class="item">
+            <img src="ragi mudde.jpg" alt="item not available" >
+            <h4>ragi mudde</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="tandoori chicken.jpg" alt="item not available" >
+            <h4>tandoori chicken</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="tatte idli.jpg" alt="item not available" >
+            <h4>tatte idli</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="aloo kulcha.webp" alt="item not available" >
+            <h4>aloo kulcha</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="aloo parata.jpg" alt="item not available" >
+            <h4>aloo parata</h4>
+            <button>Order</button>
+        </div class="item">
+
+        <div class="item">
+            <img src="butterchicken.jpg" alt="item not available" >
+            <h4>butter chicken</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="buttergarlic.jpg" alt="item not available" >
+            <h4>butter garlic</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="chicken tikka.jpg" alt="item not available" >
+            <h4>chicken tikka</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="chicken65.jpg" alt="item not available" >
+            <h4>chicken 65</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="chole bature.jpg" alt="item not available" >
+            <h4>chole bature</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="fish curry.jpg" alt="item not available" >
+            <h4>fish curry</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="jolada rotti.jpg" alt="item not available" >
+            <h4>jolada rotti</h4>
+            <button>Order</button>
+        </div class="item">
+
+        <div class="item">
+            <img src="kulcha.jpg" alt="item not available" >
+            <h4>kulcha</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="kushka biriyani.webp" alt="item not available" >
+            <h4>kushka biriyani</h4>
+            <button>Order</button>
+        </div>
+
+        <div class="item">
+            <img src="hydrabad biriyani.jpg" alt="item not available" >
+            <h4>hydrabad biriyani </h4>
+            <button>Order</button>
+        </div>
+    </section>
+</body>
+</html>
